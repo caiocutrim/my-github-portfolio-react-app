@@ -66,7 +66,7 @@ const Profile = () => {
   const projects = repositories.map((repository) => ({
     label: repository.name,
     value: <Link url={repository.html_url} title="Github URL" />,
-  });
+  }));
 
   return (
     <ProfileWrapper className="Profile-container">
